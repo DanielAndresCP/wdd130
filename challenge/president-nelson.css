@@ -1,0 +1,49 @@
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #fca6c9;
+}
+
+h1,
+blockquote {
+    color: white;
+}
+
+h1:hover {
+    color: black;
+}
+
+main {
+    max-width: 26rem;
+    margin: 0 auto;
+}
+
+#intro-quote-text,
+#closing-quote-text {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ol {
+    text-align: left;
+    font-weight: 600;
+}
+
+ol li {
+    margin-bottom: 0.5rem;
+}
+
+img#portrait {
+    width: 10rem;
+}
+
+#closing-quote-text {
+    max-width: 13rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+#closing-quote-source {
+    font-size: 0.7rem;
+    color: black;
+}
