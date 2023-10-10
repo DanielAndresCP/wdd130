@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Open+Sans:wght@500&display=swap');
+
+body {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+h2 {
+    margin: 0;
+}
+
+h4 {
+    color: #201E1F;
+}
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -7,6 +25,7 @@ nav a {
     text-align: center;
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover {
@@ -27,25 +46,28 @@ main section {
     text-align: center;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
 #background {
     height: 725px;
     background-color: #E08E45;
-}
-
-body {
-    background-color: white;
 }
 
 header {
     background-color: #32936F;
 }
 
-
 .book,
 .join {
     background-color: #E08E45;
     color: black;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover,
@@ -54,29 +76,60 @@ header {
     color: white;
 }
 
+.rivers-card,
+.camping-card,
+.rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #32936F;
+}
+
+.home-title {
+    color: #201E1F;
+    font-family: 'Domine', 'Times New Roman', serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
 .msg {
     background-color: #32936F;
+    line-height: 1.5em;
+    padding: 35px;
+}
+
+.msg h2 {
+    color: white;
+    font-family: 'Domine', 'Times New Roman', serif;
+}
+
+.msg p {
+    color: white;
+    font-size: 0.8em;
+    padding-bottom: 15px;
+}
+
+
+.logo {
+    width: 80px;
+    padding-top: 5px;
+}
+
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+#hero-img {
+    width: 100%;
 }
 
 footer {
     background-color: #3e3e3e;
     color: white;
-}
-
-.home-title {
-    color: #201E1F;
-}
-
-h4 {
-    color: #201E1F;
-}
-
-.msg h2 {
-    color: white;
-}
-
-.msg p {
-    color: white;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a {
@@ -85,25 +138,17 @@ footer a {
 }
 
 footer a:hover {
-    color: #3F88C5;
-}
-
-.logo {
-    width: 80px;
-}
-
-.icon {
-    width: 80px;
-}
-
-#hero-img {
-    width: 100%;
+    color: #32936F;
 }
 
 footer p {
     font-size: 1.2em;
 }
 
-footer p a:hover{
+footer p a:hover {
     text-decoration: underline;
+}
+
+footer .social-img {
+    padding-top: 15px;
 }
