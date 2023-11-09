@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Domine&family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Open+Sans:wght@300;400&display=swap');
 
 body {
     font-family: 'Open Sans', 'Arial', sans-serif;
@@ -74,11 +74,11 @@ nav a:hover {
     grid-template-columns: repeat(10, 1fr);
 }
 
-main section {
+main.home-grid section {
     text-align: center;
 }
 
-main section img {
+main.home-grid section img {
     box-sizing: border-box;
 }
 
@@ -227,6 +227,131 @@ footer .social-img {
     padding-top: 15px;
 }
 
+
+
+/* --- Styles for Rivers page ---*/
+
+#rivers-page-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+#rivers-page-hero-box {
+    grid-row: 1/2;
+    grid-column: 1/4;
+}
+
+#rivers-page-hero-img {
+    width: 100%;
+    display: block;
+}
+
+#rivers-page-hero-msg {
+    text-align: center;
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.rivers-title {
+    color: white;
+    font-family: 'Domine', 'Times New Roman', serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.rivers-description {
+    font-size: 16px;
+    text-align: left;
+    padding: 1.5rem;
+}
+
+.rivers-overview {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: auto 800px;
+    background-color: #32936F;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.rivers-overview-text {
+    font-size: 16px;
+}
+
+.rivers-overview-imgs {
+    grid-column: 2/5;
+    text-align: right;
+}
+
+.rivers-overview-imgs img {
+    width: 250px;
+}
+
+.river-description {
+    margin-top: 4rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: #201E1F;
+    color: #ededed;
+}
+
+
+.river-description-main-img {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    max-width: 350px;
+    float: right;
+}
+
+.river-description-main-img-wide {
+    width: 100%;
+}
+
+.river-description-imgs {
+    width: 100%;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.river-description-imgs img {
+    width: 80%;
+    max-height: 230px;
+    transition: transform 0.5s;
+    box-shadow: 5px 5px 10px #201E1F;
+}
+
+.river-description-imgs img:hover {
+    transform: scale(1.1);
+}
+
+.call-to-action {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    row-gap: 1rem;
+    margin-top: 5rem;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #32936F;
+}
+
+.call-to-action * {
+    grid-column: 2/3;
+    text-align: center;
+    color: white;
+}
+
+.clearfix::after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
 
 @media screen and (max-width: 900px) {
 
