@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dry Oar Boating | Contact Us</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div id="content">
+
+        <header>
+            <a id="logo-link" href="index.html">
+                <img class="logo" src="images/logo_small.png" alt="Dry Oar Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="rivers.html">Rivers</a>
+                <a href="site-plan-rafting.html">Site Plan</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+        </header>
+        <div id="rivers-page-hero">
+            <div id="rivers-page-hero-box">
+                <img id="rivers-page-hero-img" src="images/rivers-hero-img.png" alt="People enjoying rafting">
+            </div>
+            <section id="rivers-page-hero-msg">
+                <h1 class="rivers-title">Contact Us</h1>
+            </section>
+        </div>
+        <main class="rivers-description">
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post" class="contact-us-form">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="user_name" id="name">
+                </div>
+                <div>
+                    <label for="mail">Email:</label>
+                    <input type="email" name="user_email" id="mail">
+                </div>
+                <div>
+                    <label for="msg">Message:</label>
+                    <textarea name="user_message" id="msg"></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit">Send your message</button>
+                </div>
+            </form>
+
+        </main>
+
+        <footer>
+            <p>Dry Oar &copy; 2023 - Daniel Concha</p>
+            <p><a href="site-plan-rafting.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a target="_blank" href="https://facebook.com">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a target="_blank" href="https://twitter.com">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a target="_blank" href="https://instagram.com">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function (e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+</body>
+
+</html>
