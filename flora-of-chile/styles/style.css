@@ -148,6 +148,11 @@ nav a:hover {
     text-align: center;
 }
 
+.hero-msg h1{
+    background-color: var(--paragraph-background-color);
+    padding: 1rem;
+}
+
 .btn {
     display: inline-block;
     border-radius: 10px;
