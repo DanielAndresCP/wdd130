@@ -136,9 +136,6 @@ nav a:hover {
 
 .hero-img {
     grid-column: 1/4;
-}
-
-.hero-img img {
     width: 100%;
     display: block;
 }
@@ -148,7 +145,7 @@ nav a:hover {
     text-align: center;
 }
 
-.hero-msg h1{
+.hero-msg h1 {
     background-color: var(--paragraph-background-color);
     padding: 1rem;
 }
@@ -168,12 +165,8 @@ nav a:hover {
     background-color: var(--accent2-color);
 }
 
-.padding-box {
-    padding: 0 2rem;
-}
-
 .card-container {
-    margin: 3rem 0 3rem 0;
+    margin: 3rem 2rem;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 2fr;
     grid-template-rows: 25px auto 25px;
