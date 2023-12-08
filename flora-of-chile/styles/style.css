@@ -172,15 +172,28 @@ nav a:hover {
     grid-template-rows: 25px auto 25px;
 }
 
-.card-container img {
+.card-container .card-img {
     grid-row: 1/4;
+    margin: 0;
+    background-color: inherit;
+    background-color: var(--paragraph-background-color);
+}
+
+.card-container .card-img figcaption {
+    font-size: 0.6em;
+    margin: 0 0.5rem 0.5rem 0.5rem;
+    font-style: italic;
 }
 
 .card-text-partial {
     grid-row: 2;
 }
 
-.card-container.img-left img {
+.card-text-complete {
+    grid-row: 1/4;
+}
+
+.card-container.img-left .card-img {
     grid-column: 1;
 }
 
@@ -188,7 +201,12 @@ nav a:hover {
     grid-column: 2/5;
 }
 
-.card-container.img-right img {
+.card-text .plant-overview-name {
+    border-left: 5px solid var(--accent2-color);
+    padding: 0.5em;
+}
+
+.card-container.img-right .card-img {
     grid-column: 4;
 }
 
@@ -217,6 +235,18 @@ footer a {
 }
 
 
+.page-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3rem 2rem;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.page-intro img {
+    grid-row: 1/4;
+    grid-column: 2;
+}
 
 /* 
 -----------------------------------------------------------
